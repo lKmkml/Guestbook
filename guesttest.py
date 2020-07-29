@@ -25,7 +25,7 @@ def sign():
 @app.route('/process', methods=['POST'])
 def process():
 	name = request.form['name']
-	comment = request.form['comment']
+	comment = request.form['comments']
 	signature = Comments(name=name, comment=comment)
 	db.session.add(signature)
 	db.session.commit()
