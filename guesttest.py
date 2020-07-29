@@ -38,5 +38,5 @@ def home():
 	return render_template('example.html', links=links)
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.debug=True
 	app.run(host='0.0.0.0', port=80)
